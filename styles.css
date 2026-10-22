@@ -4,31 +4,30 @@ body {
   background: #fff;
   color: #1f2937;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  line-height: 1.75;
   -webkit-font-smoothing: antialiased;
 }
 .fac-root { min-height: 100vh; }
 .fac-topbar {
-  background: #1e40af;
+  background: #1e3a8a;
   color: #fff;
   font-size: 1.2rem;
   font-weight: 800;
+  line-height: 1.45;
   margin-bottom: 4px;
   padding: 0.75rem 16rem;
   text-align: left;
 }
-.fac-frame {
-  margin: 0 auto;
-  max-width: 48rem;
-}
+.fac-frame { margin: 0 auto; max-width: 48rem; }
 .fac-story { text-align: center; }
 .fac-title {
   color: #1f2937;
   font-family: Roboto, sans-serif;
-  font-size: 1.75rem;
+  font-size: 1.7rem;
   font-weight: 900;
   line-height: 1.25;
   margin-top: -14px;
-  padding: 1rem 0.75rem;
+  padding: 1rem 0;
 }
 .fac-hero {
   border-radius: 5px;
@@ -39,54 +38,57 @@ body {
 .fac-text {
   color: #1f2937;
   font-size: 1.5rem;
+  font-weight: 400;
   line-height: 2rem;
-  margin: 1rem 1rem;
+  margin: 1rem 0;
   text-align: left;
 }
 .fac-next { margin-top: -5px; }
-.fac-form { margin-top: -5px; padding: 1rem; }
+.fac-form { margin-top: -5px; padding: 1rem; text-align: center; }
 .fac-ask {
   color: #1f2937;
-  font-size: 1.85rem;
+  font-size: 1.875rem;
   font-weight: 700;
   line-height: 2.25rem;
+  text-align: center;
 }
 .fac-answers {
   display: grid;
   gap: 0.5rem;
-  justify-items: center;
   margin-top: 1.2rem;
 }
 .fac-answer {
   align-items: center;
-  background: #059669;
-  border-radius: 0.4rem;
+  background: #22c55e;
+  border-radius: 0.5rem;
   color: #fff;
   cursor: pointer;
   display: flex;
-  font-size: 1.7rem;
+  font-size: 1.875rem;
   font-weight: 700;
   justify-content: center;
   letter-spacing: 0.025em;
-  line-height: 1.3;
+  line-height: 2.25rem;
   padding: 0.75rem;
   text-align: center;
   text-transform: uppercase;
+  transition: background-color 0.2s ease;
   width: 100%;
 }
-.fac-answer:hover { background: #047857; }
+.fac-answer:hover { background: #3ee97c; }
 .fac-check {
-  background: #ecfdf5;
+  background: #e9f2ff;
   border-top: 2px solid #3b82f6;
   color: #1f2937;
   font-size: 1.125rem;
-  font-weight: 700;
+  font-weight: 400;
   line-height: 1.75rem;
   margin: 1rem auto;
   max-width: 48rem;
   padding: 1.5rem;
   text-align: center;
 }
+#status-view { font-weight: 700; }
 .fac-result {
   color: #22c55e;
   font-size: 1.5rem;
@@ -94,15 +96,17 @@ body {
   line-height: 2rem;
 }
 .fac-offer {
-  background: #fef3c7;
+  background: #fef08a;
+  color: #1f2937;
   font-size: 1.5rem;
   font-weight: 700;
   line-height: 2rem;
   margin-top: 0.5rem;
 }
 .fac-spots {
-  background: #fde68a;
+  background: #fde047;
   border-radius: 0.5rem;
+  color: #1f2937;
   font-size: 1.25rem;
   font-weight: 700;
   line-height: 1.75rem;
@@ -111,16 +115,16 @@ body {
   width: max-content;
 }
 .fac-direction {
+  color: #1f2937;
   font-size: 1rem;
   font-weight: 700;
   line-height: 1.75rem;
   margin-top: 2rem;
 }
 .fac-call {
-  animation: glow 1.5s infinite alternate;
-  background: #059669;
-  border-radius: 0.4rem;
-  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+  animation: glow 1.5s ease-in-out infinite alternate;
+  background: #22c55e;
+  border-radius: 0.5rem;
   color: #fff;
   cursor: pointer;
   display: block;
@@ -131,8 +135,9 @@ body {
   padding: 1.25rem;
   text-decoration: none;
   text-transform: capitalize;
+  transition: background-color 0.2s ease;
 }
-.fac-call:hover { background: #047857; }
+.fac-call:hover { background: #3bec7c; }
 .fac-saved {
   font-size: 1.25rem;
   font-weight: 700;
@@ -147,11 +152,12 @@ body {
 }
 .fac-timer {
   background: transparent;
-  border: 2px dashed red;
-  color: red;
+  border: 2px dashed #ff0000;
+  color: #ff0000;
   display: flex;
   font-size: 1.25rem;
-  font-weight: 700;
+  font-weight: 400;
+  justify-content: center;
   line-height: 1.75rem;
   margin: 0.5rem auto 0;
   padding: 0.25rem 1rem;
@@ -171,24 +177,7 @@ body {
 .fac-policy { color: #3b82f6; margin-bottom: 0.5rem; }
 .fac-policy a { color: #3b82f6; text-decoration: none; }
 .fac-policy a:hover { text-decoration: underline; }
-.fac-credit { font-size: 12px; color: #1f2937; }
-.fac-popup {
-  background: #fff;
-  border-radius: 6px;
-  bottom: 1rem;
-  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.18);
-  color: #111;
-  display: none;
-  font-size: 0.95rem;
-  line-height: 1.4;
-  max-width: 320px;
-  padding: 14px 16px;
-  position: fixed;
-  right: 1rem;
-  z-index: 9999;
-}
-.fac-popup.show { display: block; }
-.fac-highlight { color: #22c55e; font-weight: 700; }
+.fac-credit { color: #1f2937; font-size: 12px; }
 .fac-article {
   color: #111;
   margin: 0 auto;
@@ -206,16 +195,22 @@ body {
 .fac-articlewrap p, .fac-articlewrap li { font-size: 16px; line-height: 1.6; }
 .fac-articlewrap a { color: #1d4ed8; }
 @keyframes glow {
-  0% { box-shadow: 0 0 5px #34c759, 0 0 10px #34c759; }
-  50% { box-shadow: 0 0 10px #34c759, 0 0 20px #34c759; }
-  100% { box-shadow: 0 0 5px #34c759, 0 0 10px #34c759; }
+  from { box-shadow: 0 0 5px #34c759, 0 0 10px #34c759; }
+  to { box-shadow: 0 0 14px #34c759, 0 0 28px #34c759; }
 }
 @media (max-width: 768px) {
   .fac-topbar { padding: 1.25rem 1rem; text-align: center; }
+  .fac-frame { padding: 0.4rem 1rem; }
   .fac-title { font-size: 1.5rem; line-height: 1.2; }
-  .fac-text { font-size: 1.2rem; line-height: 1.7rem; }
-  .fac-ask, .fac-answer { font-size: 1.35rem; line-height: 1.4; }
-  .fac-ask { text-align: center; }
+  .fac-text { font-size: 1rem; line-height: 1.5rem; margin-top: 1rem; }
+  .fac-form { padding: 0; }
+  .fac-ask { font-size: 1.5rem; line-height: 2rem; text-align: center; }
+  .fac-answer { font-size: 1.5rem; line-height: 2rem; }
+  .fac-check { margin: 1.25rem 1rem; }
+  .fac-result, .fac-offer { font-size: 1.25rem; line-height: 1.75rem; }
+  .fac-direction { font-size: 1.1rem; }
+  .fac-call { font-size: 1.35rem; line-height: 1.75rem; }
+  .fac-saved { font-size: 1.125rem; }
+  .fac-limit { font-size: 0.875rem; line-height: 1.25rem; }
   .fac-footer, .fac-policy { text-align: center; }
-  .fac-offer { font-size: 1.25rem; line-height: 1.6rem; }
 }
