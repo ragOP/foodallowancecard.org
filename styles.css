@@ -211,9 +211,11 @@ body {
   100% { box-shadow: 0 0 5px #34c759, 0 0 10px #34c759; }
 }
 @media (max-width: 768px) {
-  .fac-topbar { padding: 1.25rem 1rem; text-align: left; }
+  .fac-topbar { padding: 1.25rem 1rem; text-align: center; }
   .fac-title { font-size: 1.5rem; line-height: 1.2; }
   .fac-text { font-size: 1.2rem; line-height: 1.7rem; }
   .fac-ask, .fac-answer { font-size: 1.35rem; line-height: 1.4; }
+  .fac-ask { text-align: center; }
+  .fac-footer, .fac-policy { text-align: center; }
   .fac-offer { font-size: 1.25rem; line-height: 1.6rem; }
 }
